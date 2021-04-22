@@ -1,2 +1,2 @@
-# ProjetosDePraticas
- Projetos pessoais com intuito de prática mediante o avanço nos estudos
+# Projetos de Práticas
+ Projetos pessoais com intuito de prática mediante o avanço dos estudos.
