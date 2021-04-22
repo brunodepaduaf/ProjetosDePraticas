@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Projeto Survey Form</h1>
+        <p><em>Projeto desenvolvido em HTML/CSS/JS com fins de prática</em></p>
+    </div>
+
+<form>
+    <div id="bloco-principal">
+
+        <div class="campo">
+            <label for="tnome">Nome</label>
+            <input type="text" name="Nome" class="preencher" placeholder="Coloque seu Nome" required>
+        </div>
+
+
+        <div class="campo">
+            <label for="temail">Email</label>
+            <input type="email" name="Email" class="preencher" placeholder="Coloque seu Email" required>
+        </div>
+
+
+        <div class="campo">
+            <label for="tidade">Idade <em>(opcional)</em></label>
+            <input type="number" name="Idade" class="preencher" placeholder="Coloque sua Idade" required>
+        </div>
+
+
+        <div class="campo">
+                <label for="topcupacao">Ocupação</label>
+                <select name="Ocupação" id="select">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="testudante">Estudante</option>
+                        <option value="tempregado">Empregado</option>
+                        <option value="tdesempregado">Desempregado</option>
+                        <option value="toutros">Outros</option>
+                </select> </p>
+        </div>
+
+
+        <div class="campo">
+            <label>Recomendaria este formulário para alguém?</label>
+
+                <label for="tdefinitivamente"><input type="radio" name="recomendacao" class="input-radio" checked>Definitivamente</label>
+
+                <label for="ttalvez"><input type="radio" name="recomendacao" class="input-radio">Talvez</label>
+
+                <label for="tachoquenao">
+                    <input type="radio" name="recomendacao" class="input-radio">Acho que não</label>
+        </div>
+
+
+        <div class="campo">
+            <label>O que você gostaria de ver?</label>
+            
+            <label for="thtml"><input type="checkbox" name="html" id="thtml">HTML</label>
+
+            <label for="tjs"><input type="checkbox" name="javascript" id="tjs">JavaScript</label>
+            
+            <label for="tphp"><input type="checkbox" name="php" id="tphp">PHP</label>
+            
+            <label for="tcss"><input type="checkbox" name="css" id="tcss">CSS</label>
+            
+            <label for="tcsharp"><input type="checkbox" name="c#" id="tcsharp">C#</label>
+
+        </div>
+
+        <div class="campo">
+            <label for="tcomentarios">Algum comentário ou sugestão?</label>
+            <textarea name="comentario" id="comentario" placeholder="Comentarios..."></textarea>
+        </div>
+
+        <div><input id=botao type="button" value="Submit"></div>
+
+    </div>
+</form>
+</body>
+</html>
